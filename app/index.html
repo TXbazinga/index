@@ -14,17 +14,36 @@
                 document.documentElement.style.fontSize=document.documentElement.clientWidth/3.2+'px';
             });
             document.documentElement.style.fontSize=document.documentElement.clientWidth/3.2+'px';
-            $('.t_a1').click(function(){
-                $('.t_a2').css('display','block');
-                $('.m_opa').css('display','block');
-                $('.t_a2').click(function(){
-                    $('.t_a2').css('display','none');
-                    $('.m_opa').css('display','none')
+            /*$('.z_menu').click(function(){
+                $('.z_close').css('display','block');
+                $('#z_nav').css('display','block');
+                $('.z_close').click(function(){
+                    $('.z_close').css('display','none');
+                    $('#z_nav').css('display','none')
                 });
                 $('.call').click(function () {
-                    $('.m_opa').css('display','none')
+                    $('#z_nav').css('display','none')
                 })
-            });
+            });*/
+            var oMenu=document.getElementById('z_nav');
+            var winH = document.documentElement.clientHeight;
+            oMenu.style.height = winH + 'px';
+            var oOpen = document.getElementById('z_menu');
+            var oClose = document.getElementById('z_close');
+            var oNav = document.getElementById('z_nav');
+            oOpen.onclick = function(){
+                oNav.style.display = 'block';
+                this.style.display = 'none';
+                oClose.style.display = 'block';
+            };
+            oClose.onclick = function(){
+                oNav.style.display = 'none';
+                this.style.display = 'none';
+                oOpen.style.display = 'block';
+            };
+            $('.call').click(function () {
+                $('#z_nav').css('display','none')
+            })
             $('#m_touch').click(function(){
                 $('#m_play')[0].play();
                 $('#m_touch').hide();
@@ -35,7 +54,7 @@
 </head>
 <body>
     <div class="t_box">
-        <div class="nav_top">
+        <!--<div class="nav_top">
             <a href="javascript:;" class="t_a1">
                 <img src="../img/anniu.jpg" alt="">
             </a>
@@ -50,6 +69,18 @@
                     <a href="#m_bottom" class="call">联系我们</a>
                 </div>
             </div>
+        </div>-->
+        <div class="z_header">
+            <a id="z_menu" href="javascript:;"><img src="../img/icon_menu_03.png" /></a>
+            <a id="z_close" href="javascript:;"><img src="../img/icon_close.png" /></a>
+            <h1>大数医达</h1>
+        </div>
+        <div id="z_nav">
+            <ul>
+                <li><a href="index.html">首页</a> </li>
+                <li><a href="../app/product/product.html">产品介绍</a></li>
+                <li class="call"><a href="#m_bottom">联系我们</a></li>
+            </ul>
         </div>
         <div class="t_tab">
             <img src="../img/banner.jpg" alt="">
