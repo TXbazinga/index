@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>标题</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <script src="../js/jquery-1.7.2.js"></script>
+    <script>
+        $(function(){
+            $(window).resize(function(){
+                document.documentElement.style.fontSize=document.documentElement.clientWidth/3.2+'px';
+            });
+            document.documentElement.style.fontSize=document.documentElement.clientWidth/3.2+'px';
+            $('.t_a1').click(function(){
+                $('.t_a2').css('display','block');
+                $('.m_opa').css('display','block');
+                $('.t_a2').click(function(){
+                    $('.t_a2').css('display','none');
+                    $('.m_opa').css('display','none')
+                });
+                $('.call').click(function () {
+                    $('.m_opa').css('display','none')
+                })
+            });
+            $('#m_touch').click(function(){
+                $('#m_play')[0].play();
+                $('#m_touch').hide();
+                $('#m_layer').hide();
+            });
+        })
+    </script>
+</head>
+<body>
+    <div class="t_box">
+        <div class="nav_top">
+            <a href="javascript:;" class="t_a1">
+                <img src="../img/anniu.jpg" alt="">
+            </a>
+            <a href="javascript:;" class="t_a2">
+                <img src="../img/anniu2.jpg" alt="">
+            </a>
+            <h1>大数医达</h1>
+            <div class="m_opa">
+                <div class="m_middle">
+                    <a href="index.html">首页</a>
+                    <a href="../app/product/product.html">产品介绍</a>
+                    <a href="#m_bottom" class="call">联系我们</a>
+                </div>
+            </div>
+        </div>
+        <div class="t_tab">
+            <img src="../img/banner.jpg" alt="">
+            <div class="t_hh">
+                <h3 class="t_h3_1">人工智能的一小步，</h3>
+                <h3 class="clearfix">
+                    <p class="t_p1">医疗健康</p>
+                    <p class="t_p2">一大步</p>
+                </h3>
+            </div>
+        </div>
+        <div class="t_2">
+            <h3 class="clearfix"> <b>01</b> <i>关于我们</i></h3>
+            <div class="m_h"></div>
+            <div class="m_word">
+            <p>北京大数医达科技有限公司是一家在人工智能、大数据、云计算方面拥有国际领先水平的高科技企业，专注于多源异构医疗数据处理、深度挖掘与机器学习。</p>
+            </div>
+        </div>
+        <section class="t_3">
+            <ul class="clearfix">
+                <li>
+                    <img src="../img/elite.svg" alt=""  />
+                    <p class="t_pp1">顶尖团队</p>
+                    <p>Elite</p>
+                    <p>team</p>
+                </li>
+                <li>
+                    <img src="../img/medical.svg" alt="" />
+                    <p class="t_pp1">医学专家</p>
+                    <p>Medical</p>
+                    <p>experts</p>
+                </li>
+                <li>
+                    <img src="../img/leading.svg" alt="" />
+                    <p class="t_pp1">国际领先</p>
+                    <p>Leading</p>
+                    <p>international</p>
+                </li>
+                <li>
+                    <img src="../img/bigData.svg" alt="" />
+                    <p class="t_pp1">大数据</p>
+                    <p>Big</p>
+                    <p>data</p>
+                </li>
+                <li>
+                    <img src="../img/ais.svg" alt="" />
+                    <p class="t_pp1">人工智能</p>
+                    <p>Aritificial</p>
+                    <p>intelligence</p>
+                </li>
+                <li>
+                    <img src="../img/cloud.svg" alt="" />
+                    <p class="t_pp1">云计算</p>
+                    <p>Cloud</p>
+                    <p>computing</p>
+                </li>
+                <li>
+                    <img src="../img/acs.svg" alt="" />
+                    <p class="t_pp1">实战派</p>
+                    <p>Actual</p>
+                    <p>combat</p>
+                </li>
+            </ul>
+        </section>
+
+        <div class="t_2">
+            <h3 class="clearfix"> <b>02</b> <i>团队领袖—邓侃 CTO</i></h3>
+            <div class="m_h"></div>
+            <div class="m_word">
+                <p>
+                    团队领袖邓侃博士是互联网领域著名技术专家，师从大数据学科创始人——美国卡内基梅隆大学(CMU)计算机学院院长Andrew Moore教授，专业从事机器学习和数据挖掘，曾Oracle主任架构师、百度搜索高级技术总监等职务
+                </p>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <!--&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+        <div class="m_box">
+            <h3>03 我们的愿景</h3>
+            <div class="m_h"></div>
+            <div class="m_word">
+                <p>大数医达拥有自主知识产权的医疗大数据系统，该系统把超大规模的云计算系统，深度学习和数据挖掘等大数据算法，应用到医疗领域，自动化、智能化融汇多源异构的医疗数据，把自然语言的非结构化病历，自动转化为结构化的病历，从中挖掘出医生的临床诊断和治疗经验，助力医疗大数据产业发展，促进医疗卫生健康事业进步，服务社会，造福人类。</p>
+            </div>
+            <div class="m_video">
+                <video controls="controls" poster="../img/bg.jpg" id="m_play" >
+                    <source src="hd.mp4" type="video/mp4" >
+                    您的浏览器不支持video标签
+                </video>
+                <div class="m_layer" id="m_layer"></div>
+                <a href="javascript:;" id="m_touch" class="m_touch"><img src="../img/bo.png" alt="" class="m_bo"/></a>
+            </div>
+        </div>
+        <div class="m_bottom" id="m_bottom">
+            <h3><span>04</span> 联系我们</h3>
+            <div class="m_h2"></div>
+            <div class="m_word2">
+                <p class="m_p1">地址：北京市海淀区东北旺西路8号中关村软件园一期3号楼3B区1206室</p>
+                <p class="m_p3">公司邮箱：service@iyoudoctor.com</p>
+                <p class="m_p4">公司网址：www.iyoudoctor.com</p>
+            </div>
+            <iframe src="map.html" scrolling="no"></iframe>
+            <div class="b">
+                <p class="bbb">京ICP备16013105号-1</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
