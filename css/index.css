@@ -16,14 +16,23 @@ html{
 }
 .t_box{
      width:100%;
- }
+}
+/*.toptop{
+    width:3.2rem;
+    height:0.38rem;
+    position: relative;
+}*/
+.t_text{
+    position: relative;
+    z-index: 2;
+}
 .t_box .nav_top{
     width:3.2rem;
     height:0.38rem;
     background: #040404;
     overflow: hidden;
     position: relative;
-    z-index: 1;
+    z-index: 222;
 }
 .nav_top .t_a1 img{
     width:0.205rem;
@@ -33,6 +42,7 @@ html{
     position: absolute;
     top:0.115rem;
     left:0.225rem;
+    z-index: 11;
 }
 .nav_top .t_a2 img{
     width:0.205rem;
@@ -43,6 +53,7 @@ html{
     top:0.115rem;
     left:0.225rem;
     display: none;
+    z-index: 11;
 }
 .m_opa{
     position: fixed;
@@ -53,7 +64,7 @@ html{
     background: #000;
     opacity: 0.7;
     filter: alpha(opacity:70);
-    z-index: -1;
+    z-index: 1;
     display: none;
 }
 .m_middle{
